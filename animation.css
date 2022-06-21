@@ -1,0 +1,25 @@
+
+.h1animation {
+    animation: h1fadein 5s;
+    text-align: left;
+    font-size: 80px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    padding-top: 55px;
+    text-transform: capitalize;
+    color: white;
+  }
+
+  @keyframes h1fadein {
+    from {
+      Opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+
+

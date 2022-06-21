@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Dei Pronko">
+    <meta name="description" content="Dei Pronko, Porfolio, Diana Ballesteros Pronko, portfolio">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Sanskrit:ital@0;1&display=swap" rel="stylesheet">
+    
+    <title>Porfolio - Diana Ballesteros Pronko</title>
+
+</head>
+
+<body>
+            
+    <header>
+        <nav>
+            <div class="wrapper">   
+                <ul class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="design.html">design</a></li>
+                    <li><a href="illustration.html">illustration</a></li>
+                    <li><a href="tradicionalart.html">tradicional art</a></li>           
+                    <img src="assets/dp_favicom.svg" alt="dei pronko logo" href="index.html" class="logo">
+                    <li><a href="productdesign.html">product design</a></li>
+                    <li><a href="animation.html">animation</a></li>
+                    <li><a href="contactme.html">contact me</a></li>
+                </ul>
+            </div>    
+        </nav>
+     </header>
+    
+     <div class="background-illustration">
+    
+            <div class="illustration">
+
+                     <h1>illustration</h1>
+                     <div class="phrase-background"><p class="illustrationphrase">“Never Explain Anything.”
+                        ― Howard Phillips Lovecraft</p></div>
+
+                        <div class="abstract-martin"><img src="assets/martin_gif.gif" alt="An abstract painting of a men">
+                        </div>
+                        
+                      
+            </div> 
+        
+            <div class="container">
+
+                     <h2>concept art</h2>
+
+                        <div class="image-container">
+                                
+                                <div class="image"><img src="assets/martin_espejo.jpg" alt="illustration"></div>
+                                <div class="image"><img src="assets/devin_ratas.jpg" alt="illustration"></div>
+                                <div class="image"><img src="assets/dream.jpg" alt="illustration"></div>
+                                <div class="image"><img src="assets/castle.jpg" alt="illustration"></div>
+                                <div class="image"><img src="assets/monograma.jpg" alt="illustration"></div>
+                                <div class="image"><img src="assets/monograma.jpg" alt="illustration"></div>
+                                <div class="image"><img src="assets/monograma.jpg" alt="illustration"></div>
+                                <div class="image"><img src="assets/devin_ratas.jpg" alt="illustration"></div>
+                        </div>
+                   
+                    <div class="popup-image">
+                        <span>&times;</span>
+                            <img src="assets/martin_espejo.jpg" alt="illustration">
+                            
+                    </div>
+             </div>          
+    </div>    
+        
+    <script>
+            document.querySelectorAll('.image-container img').forEach(image =>{
+                image.onclick = () =>{
+                document.querySelector('.popup-image').style.display = 'block'
+                document.querySelector('.popup-image img').src = image.getAttribute('src')
+            }
+        });
+
+            document.querySelector('.popup-image span').onclick = () =>{
+                document.querySelector('.popup-image').style.display = 'none';    
+            }
+
+     
+    </script>
+
+    <footer>
+                     
+            <section>
+                <div class="caja">
+                    <p><a href="https://www.instagram.com/deipronko/"><img src="assets/intagram.svg" alt="instagram logo"></a></p></div>
+                <div class="caja">    
+                    <p><a href="https://www.linkedin.com/in/ilustraciondiana/"><img src="assets/linkedin.svg" alt="linkedin logo"></a></p></div>
+                <div class="caja">
+                    <p><a href="https://www.behance.net/deipronko/"><img src="assets/behance.svg" alt="behance logo"></a></p></div>
+           
+            </section>             
+        
+    </footer>
+    
+
+</body>
+</html>
